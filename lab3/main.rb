@@ -1,3 +1,4 @@
+require 'json'
 def replacing (str)
     if str[str.length-2, str.length-1] == "CS"
       puts 2 ** str.length
@@ -20,6 +21,7 @@ def replacing (str)
       end
     else puts "No pokemons to add"
     end
+    puts arr.to_json
     arr.each {|hash| puts hash}
   end
   
